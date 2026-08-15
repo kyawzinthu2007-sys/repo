@@ -458,8 +458,7 @@ function Header({ user, isAdmin, adminUsername, canViewApplications, view, setVi
               <Badge tone="amber">Creator</Badge>
               <button onClick={onAdminLogout} className="hidden sm:inline-flex px-3 py-2 rounded-lg text-sm font-bold text-slate-500 hover:bg-slate-100">Sign out</button>
             </React.Fragment>
-          ) : (
-          )}
+          ) : null}
           {user ? (
             <div className="flex items-center gap-1.5 pl-1">
               <button onClick={() => setView("profile")} className="flex items-center gap-2 px-2 py-1.5 rounded-lg hover:bg-slate-100" title="Open profile">
